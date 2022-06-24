@@ -217,19 +217,21 @@ ul {
     font-weight: 900;
 }
 
-.nosotros {
+/* .nosotros {
     display: flex;
 }
 
 .nosotros img {
     width: 800px;
-}
+} */
 
-.nosotros p {
+
+
+/*.nosotros p {
     margin: 0 30px 0 30px;
     font-size: 23px;
     font-weight: 600;
-}
+}*/
 
 .inicio-sesion {
     display: flex;

@@ -1,0 +1,21 @@
+@mixin fondes ($color, $size, $bgcolor, $weight, $margin){
+    color: $color;
+    background-color: $bgcolor;
+    font-size: $size;
+    font-weight: $weight;
+    margin: $margin;
+}
+
+.texto {
+    @include fondes (rgba(15, 13, 13, 0.822), 23px, lightgrey, 600, 0 30px 0 30px);
+}
+
+.titulo__nosotros {
+    @include fondes (red, 80px, transparent, 800, 80px)
+}
+
+.footer__nosotros {
+    @include fondes (#2a2a2a, 15px, rgba(133, 45, 45, 0), 200, 0 30px 0 30px);
+}
+
+
