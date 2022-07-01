@@ -1,3 +1,11 @@
+$fontsize:(
+    font-small: 15px,
+    font-medium: 23px,
+    font-midlarge: 60px,
+    font-large: 80px,
+);
+
+
 @mixin fondes ($color, $size, $bgcolor, $weight, $margin){
     color: $color;
     background-color: $bgcolor;
@@ -7,15 +15,15 @@
 }
 
 .texto {
-    @include fondes (rgba(15, 13, 13, 0.822), 23px, lightgrey, 600, 0 30px 0 30px);
+    @include fondes (rgba(15, 13, 13, 0.822), map-get($fontsize, font-medium), lightgrey, 600, 0 30px 0 30px);
 }
 
 .titulo__nosotros {
-    @include fondes (red, 80px, transparent, 800, 80px)
+    @include fondes (red, map-get($fontsize, font-large), transparent, 800, 80px)
 }
 
 .footer__nosotros {
-    @include fondes (#2a2a2a, 15px, rgba(133, 45, 45, 0), 200, 0 30px 0 30px);
+    @include fondes (#2a2a2a, map-get($fontsize, font-small), rgba(133, 45, 45, 0), 200, 0 30px 0 30px);
 }
 
 
