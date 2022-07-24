@@ -1,0 +1,117 @@
+.cont__top {
+    border-bottom-color: #8a8888;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-width: 2px;
+    border-style: solid;
+
+    padding-left: 15%;
+
+    h2 {
+        margin: 25px 0;
+        font-size: 58px;
+    }
+
+    p {
+        margin: 30px 0;
+
+        a{
+            color: map-get($variables, violet-c);
+        }
+    }
+}
+
+.cont__bot {
+    background-image: url("../HTML/Imagenes/fondo_acc.png");
+
+    .cont__bot__div {
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+
+        .cont__form {
+            display: flex;
+            flex-direction: column;
+            padding: 55px 110px;
+
+            p {
+                margin: 10px 0 10px 0;
+                color: map-get($variables, violet-c);
+                font-size: larger;
+                font-weight: 600;
+            }
+
+            input {
+                height: 30px;;
+            }
+
+            .form__text {
+                height: 60px;
+            }
+            
+            div {
+                display: flex;
+                align-items: center;
+
+                .send {
+                    padding: 9px 25px;
+                    background-color: map-get($variables, violet-c);
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                }
+    
+                .send:hover {
+                    background-color: #fa65faaf;
+                }
+
+                h5 {
+                    margin-right: 30px;
+                    font-weight: 100;
+                    color: #8a8888;
+                }
+
+                div {
+                    display: block;
+                    margin-right: 15px;
+                }
+            }
+
+        }
+
+        .cont__social {
+            background-color: #ffffff;
+            border: #c0c0c0 2px solid;
+            border-radius: 10px;
+            padding: 40px 100px 50px 50px;
+            margin: 50px;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 50px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-size: larger;
+                    font-weight: 600;
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+    }
+}

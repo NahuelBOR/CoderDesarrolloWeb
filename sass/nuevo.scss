@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+
+$variables:(
+    grey-c: #e9e9e9,
+    violet-c: #fa65fa
+);
+
+@mixin fondes ($color, $size, $bgcolor, $weight, $padding, $margin){
+    color: $color;
+    font-size: $size;
+    background-color: $bgcolor;
+    font-weight: $weight;
+    padding: $padding;
+    margin: $margin;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+    border-bottom-color: #8a8888;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-width: 2px;
+    border-style: solid;
+
+
+    .nav__logo {
+        width: 170px;
+    }
+
+    .nav__links {
+        list-style: none;
+    
+        li {
+            display: inline-block;
+            padding: 0 20px;
+    
+            a {
+                transition: all 0.3s ease 0s;
+            }
+    
+            a:hover {
+                color: #d62fd6;
+            }
+        }
+    }
+
+    button {
+        padding: 9px 25px;
+        background-color: map-get($variables, violet-c);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    button:hover {
+        background-color: #fa65faaf;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-top-color: #8a8888;
+    border-top-width: 1px;
+    border-style: solid;
+
+    p {
+        padding: 15px;
+    }
+}
+
+@import "inicio";
+@import "productos";
+@import "contacto";
+@import "nosotros";
+@import "media";
+
+
+
+
